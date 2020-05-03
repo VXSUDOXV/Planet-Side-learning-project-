@@ -1,0 +1,241 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+body{
+    height: 2400px;
+    overflow: auto;
+    
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 56px;
+    background-color: #ffffff;
+    border-color: #707070;
+    border-bottom: solid #707070 1px;
+    box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.096);
+    z-index: 50;
+}
+#side_menu_activator{
+    display: inline-flex;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    align-items: center;
+    margin-left: 15px;
+}
+#side_menu_activator span{
+    font-size: 37px;
+    color: #707070;
+}
+
+#navigation{
+    position: absolute;
+    width: 500px;
+    height: 56px;
+    right:0px
+
+}
+#nav_container{
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 56px;
+   align-items: center;
+}
+
+.nav_items{
+    list-style: none;
+
+}
+.nav_items a{
+    text-decoration:none;
+    color: #707070;
+    font-size: 20px;
+    font-family: Quicksand, sans-serif;
+}
+main{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px);
+    top: 50px;
+}
+/* Content for main */
+#contetn_container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 40;
+}
+#content_container div{
+    display: inline-flex;
+    position: fixed;
+    font-size: 150px;
+    z-index: 40;
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+#opening_header{
+    top:10%;
+}
+#learn_btn{
+    top:35%;
+    z-index: 40;
+    
+}
+#learn_btn button{
+    width: 200px;
+    height:50px;
+    border-radius: 10px;
+    border: solid 1px black;
+    z-index: 40;
+}
+#learn_btn a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    z-index: 40;
+}
+/*Background for main content */
+#main_background{
+    height: 100%;
+    z-index:40;
+}
+
+#tree_bark{
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 5px 15px black;
+    z-index: 40;
+}
+#tree_bark img{
+    width: 100%;
+
+}
+#slide_ef{
+    height:calc(100% - 500px);
+    width: 100%;
+    position: relative;
+    top:700px;
+    background-color: white;
+    z-index: 45;
+}
+/*Foter styles here.*/
+#footer_container{
+    position: relative;
+    height:1269px;
+    z-index: 40;
+    width: 100%; 
+    background-color: blue;
+}
+
+#footer_container img{
+    position: absolute;
+    width:100%;
+    height: 100%;
+}
+#overlay{
+    background-color: rgba(255, 255, 255, 0.123);
+    bottom: 0px;
+    z-index: 41;
+    width: 100%;
+    height: 100%;
+    position:relative;
+    z-index: 0;
+}
+#contactus_tags{
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 800px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#contactus_tags h1{
+    color:white;
+    font-size: 30px;
+    font-family: jost;
+    z-index:50;
+
+}
+#contactus_tags p{
+    color:white;
+    font-size: 70px;
+    font-family: jost;
+    z-index: 50;
+}
+#form_container{
+    display: flex;
+    position: relative;
+    width: 900px;
+    height: 650px;
+    margin: auto;
+    bottom:730px;
+    flex-direction: row;
+    background-color:rgba(0,0,0,.2);
+
+}
+#contact_info{
+    position: relative;
+    flex-basis: 350px;
+    height: 100%;
+    background-color: #121212;
+    left:calc(900px - 350px); 
+}
+form{
+    position: absolute;
+    display:inline-flex;
+    flex-direction:column;
+    width:calc(900px - 350px);
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#form h3{
+    color:white;
+    margin-bottom: 80px;
+    font-family: jost;
+}
+.entry_boxies{
+    position: relative;
+    bottom: 60px;
+    height: 50px;
+    width: 80%;
+    margin-top:25px;
+    padding: 0px 15px 0px 15px;
+    background-color: rgba(220, 220, 220, 0);
+    border: none;
+    outline: none;
+    border-bottom: solid 1px gray;
+}
+.entry_boxies::placeholder{
+    color:white;
+    font: normal;
+    font-size:16px;
+    font-family:quicksand;
+}
+:focus.entry_boxies{
+    border-bottom: solid 2px rgb(58, 209, 58);
+}
+.messagebox{
+    height:180px;
+}
+input[type=text] {
+    font-size: 16px;
+    color:white;
+    font-family:jost;
+}
+input[type=email]{
+    font-size: 16px;
+    color:white;
+    font-family:jost;
+}
+form textarea{
+    color: white;
+    font-size:16px;
+    font-family:jost;
+}
