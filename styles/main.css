@@ -62,6 +62,22 @@ main{
     height: calc(100% - 50px);
     top: 50px;
 }
+/* controls for side navigation overlayer created from js */
+.side_overlay{
+    background-color: rgba(219, 217, 213, 0.295);
+    height: calc(100% - 53px);
+    width: 100%;
+    position: fixed;
+    right:-100%;
+    z-index: 48;
+    transform: translateX(0%);
+    bottom: 0px;
+    transition: 0.1s;
+}
+.side_overlay.hidcontent{
+    transform: translateX(-100%);
+
+}
 #side_navigation{
     display: flex;
     flex-direction: column;
@@ -70,7 +86,7 @@ main{
     z-index: 49;
     height: 100%;
     left: -275px;
-    transform: translateX(0px);
+    transform: translateX(275px);
     transition: 0.75s;
     width: 275px;
     
@@ -90,7 +106,7 @@ main{
     font-family: jost;
 }
 #side_navigation.open{
-    transform:translateX(275px);
+    transform:translateX(0px);
 }
 
 /* Content for main */
